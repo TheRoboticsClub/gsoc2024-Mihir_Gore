@@ -1,7 +1,7 @@
 ---
 layout: page
 title: About
-permalink: /about/ 
+permalink: gsoc2024-Mihir_Gore/about/ 
 ---
 
 <img src = "../assets/images/pfp.jpeg" alt = "profile pic" width="250"> 
