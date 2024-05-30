@@ -2,9 +2,10 @@
 layout: home
 ---
 
-<img src="logo.png" alt="org logo" width="200"> 
-<p style="text-align: right"><img src="gsoclogo.png" alt="gsoc logo" width="200"> 
-<br>
+<div style="display: flex; justify-content: space-between;">
+    <img src="logo.png" alt="org logo" width="200"> 
+    <img src="gsoclogo.png" alt="gsoc logo" width="200"> 
+</div>
 <br>
 <p style="text-align: centre"><br>
 
