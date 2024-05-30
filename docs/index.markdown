@@ -2,7 +2,7 @@
 layout: home
 ---
 
-<p style="text-align: left"><img src="logo.png" alt="org logo" width="200"> 
+<img src="logo.png" alt="org logo" width="200"> 
 <p style="text-align: right"><img src="gsoclogo.png" alt="gsoc logo" width="200"> 
 <br>
 <br>
