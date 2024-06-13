@@ -9,7 +9,7 @@ In the first week, my primary goal was to locate a working version of the Digit 
 
 I tested multiple RADIs, ultimately identifying version 3.2.13 as having a stable and functional version of the Digit Classifier exercise. This involved running various tests to confirm the reliability and functionality of the exercise. I trained a deep learning (DL) model to identify digits using CNNs. However, during this process, I encountered an issue with the live video stream component of the exercise. I resolved it by making specific changes to the 'docker run' command. These modifications ensured that the live video stream functioned correctly within the Docker environment. Following these adjustments, I tested the exercise to confirm its operation. I have documented a video demonstrating the successful testing of the exercise:
 
-<a href="https://theroboticsclub.github.io/gsoc2024-Mihir_Gore/blob/main/docs/assets/videos/DigClassTest.mp4">Click here to visit Example</a>
+<a href="https://theroboticsclub.github.io/gsoc2024-Mihir_Gore/raw/main/docs/assets/videos/DigClassTest.mp4">Click here to visit Example</a>
 
 
 
