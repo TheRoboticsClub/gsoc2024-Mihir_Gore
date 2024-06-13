@@ -1,0 +1,25 @@
+---
+layout: post
+title:  "Week 1"
+date:   2024-06-12 11:00:13 +0530
+categories: jekyll update
+---
+
+In the first week, my primary goal was to locate a working version of the Digit Classifier exercise within the previous Robotics Academy Docker Images (henceforth referred to as RADIs). This task was crucial for ensuring that the exercise was operational before proceeding with any further development.
+
+I tested multiple RADIs, ultimately identifying version 3.2.13 as having a stable and functional version of the Digit Classifier exercise. This involved running various tests to confirm the reliability and functionality of the exercise. I trained a deep learning (DL) model to identify digits using CNNs. However, during this process, I encountered an issue with the live video stream component of the exercise. I resolved it by making specific changes to the 'docker run' command. These modifications ensured that the live video stream functioned correctly within the Docker environment. Following these adjustments, I tested the exercise to confirm its operation. I have documented a video demonstrating the successful testing of the exercise:
+
+<video width="320" height="240" controls>
+  <source src="/assets/videos/DigClassTest.mp4" type="video/mp4">
+</video>
+
+Upon confirming the Digit Classifier's functionality, my next immediate task was to focus on migrating the exercise to React.
+To prepare for this migration, I began studying the Follow Line New Manager exercise. This exercise provided an example of the pipeline and processes involved in migrating an application to React. 
+During my exploration of RADI version 3.2.13, I discovered a React-based version of the Digit Classifier exercise. This version served as a valuable reference, although it requires updates to align with the latest changes in the manager and the Robotics Academy framework.
+
+## To Do
+
+Given that the manager has undergone substantial changes since the release of RADI 3.2.13, I will use the React-based version of the exercise as a template. My plan is to adapt and enhance this template to create a fully functional, React-based version of the Digit Classifier exercise compatible with the latest Robotics Academy version. This adaptation will involve updating code, integrating new features, and ensuring compatibility with the current infrastructure.
+
+
+
