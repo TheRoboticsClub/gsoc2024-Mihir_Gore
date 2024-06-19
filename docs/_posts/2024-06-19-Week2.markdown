@@ -1,0 +1,18 @@
+---
+layout: post
+title:  "Week 2"
+date:   2024-06-19 11:00:13 +0530
+categories: jekyll update
+---
+
+This week, my primary focus was to understand the workings of the latest Robotics Application Manager. I need to migrate the exercises to the latest template, which consists of four components: Code Viewer, Exercise-Specific GUI Display, Console Viewer, and Gazebo Sim. For both deep learning exercises, the Code Editor and Gazebo Viewer are not required. Thus, I removed these components from the template. There is an existing React component to display the brain and RTF frequencies. I have replaced the Gazebo Viewer with the frequency display.
+
+The next step in the Digit Classifier migration is to add the live webcam feed and inference. In the previous manager, we used OpenCV to access the webcam. However, as the latest manager runs on ROS2 and each exercise requires a mandatory launch file, it was decided, after discussions with mentors, to create a launch file containing a webcam node. The HAL.py script, which contained the previous code to access the webcam with OpenCV, was replaced with code that uses ROS libraries like rclpy to access the webcam feed from the node created by the launch file. This new launch file was added to the /opt folder in the Docker container that contains all the launchers from the Robotics Infrastructure repository.
+
+I faced issues running the latest RA locally with Docker Compose, as it was difficult to locate the /opt folder within the running container. Therefore, we decided to run an existing RADI and replace the contents of the target folders using volume binding. I also created a button to upload the model; however, it currently only selects the files but doesn't upload them.
+
+## To Do
+
+* Study the code in the previous RADI again to debug the file upload button.
+* Start work on the flex container to display the live webcam inference.
+
