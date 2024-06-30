@@ -5,7 +5,8 @@ date:   2024-06-26 11:00:13 +0530
 categories: jekyll update
 ---
 
-This week, I met with an admin of the Robotics Academy to understand the structure of the new manager in depth. It was decided, firstly, to create a launch file that launches a webcam node. The webcam package used will be `v4l2_camera`, as it is an inbuilt package that comes with `ros2_humble`. This node will be subscribed to by our exercise that will display the live webcam feed. For testing purposes, I created a node and tested its functionality with another Python script using OpenCV. It can be seen [here](https://youtu.be/v3TxNPqANDY).
+This week, I met with an admin of the Robotics Academy to understand the structure of the new manager in depth. It was decided, firstly, to create a launch file that launches a webcam node. The webcam package used will be `v4l2_camera`, as it is an inbuilt package that comes with `ros2_humble`. This node will be subscribed to by our exercise that will display the live webcam feed. For testing purposes, I created a node and tested its functionality with another Python script using OpenCV. It can be seen as : 
+<iframe width="560" height="315" src="https://https://youtu.be/v3TxNPqANDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 It was then decided to accordingly edit the `HAL.py` and `GUI.py` files and to migrate the `exercise.py`'s model processing code to the `academy.py` present in the RAM. I created a new world with the webcam launch file by setting parameters of Visualization as Physical. However, I faced certain issues and conflicts with the RAM Manager, and the webcam node was not being launched. I brought up this query with the community.
 
