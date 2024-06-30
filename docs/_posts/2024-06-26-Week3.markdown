@@ -6,12 +6,12 @@ categories: jekyll update
 ---
 
 This week, I met with an admin of the Robotics Academy to understand the structure of the new manager in depth. It was decided, firstly, to create a launch file that launches a webcam node. The webcam package used will be `v4l2_camera`, as it is an inbuilt package that comes with `ros2_humble`. This node will be subscribed to by our exercise that will display the live webcam feed. For testing purposes, I created a node and tested its functionality with another Python script using OpenCV. It can be seen as : 
-<iframe width="560" height="315" src="https://https://youtu.be/v3TxNPqANDY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/v3TxNPqANDY?si=mUuGxM6aPfwXgStH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 It was then decided to accordingly edit the `HAL.py` and `GUI.py` files and to migrate the `exercise.py`'s model processing code to the `academy.py` present in the RAM. I created a new world with the webcam launch file by setting parameters of Visualization as Physical. However, I faced certain issues and conflicts with the RAM Manager, and the webcam node was not being launched. I brought up this query with the community.
 
-While the discussion for the possible solution was ongoing, I integrated model quantization and graph optimization within the last working version of the digit classifier exercise. It aims to reduce inference time for detecting digits using the uploaded model. For this, I declared a list of optimizer passes and passed them as a parameter within the optimizer function. I also performed static quantization into an INT8 data type, which helps reduce computational cost. A comparative implementation of with and without optimization tools can be seen in this [video](https://youtu.be/uInX4icuJ2E).
-
+While the discussion for the possible solution was ongoing, I integrated model quantization and graph optimization within the last working version of the digit classifier exercise. It aims to reduce inference time for detecting digits using the uploaded model. For this, I declared a list of optimizer passes and passed them as a parameter within the optimizer function. I also performed static quantization into an INT8 data type, which helps reduce computational cost. A comparative implementation of with and without optimization tools can be seen here : 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uInX4icuJ2E?si=BKq3U5_bI_AEZlxJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 ## To Do
 
 * Set up a basic working version of the exercise that displays a live webcam feed.
