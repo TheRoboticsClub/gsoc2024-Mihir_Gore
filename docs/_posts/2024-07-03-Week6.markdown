@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "Week 6"
+date:   2024-07-17 11:00:13 +0530
+categories: jekyll update
+---
+
+This week I tried to obtain a webcam feed into the exercise. Firstly, I was getting a specific error while running a sample code to obtain the webcam feed, wherein the console was displaying 
+"An instance of gazebo is not running." For the same, after meticulous discussion with the mentors, I reached upon the following remedy : 
+* Remove all the instances with the GUI file wherein we are possibly accessing gazebo. I found out that we were calculating th real time factor which is utlised by gazebo usually; which we aren't in our case. So I removed all the instances of real_time_factor or rtf from the GUI file. 
+
+Another issue was mismatched topics of subscriber and publishers in launch files and HAL.py files, which I corrected them to the same v4l2_camera_node.
+
+Another possible issue that was observed was that the physic_ rae visualisation type was not included in the launch of the gui_ server in the manager.py. This was resolved by adding an entry of the physic_ rae visualisation along with the gazebo_ rae visualisation. 
+
