@@ -2,10 +2,8 @@
 layout: post
 title:  "Week 7"
 date:   2024-07-25 11:00:13 +0530
-categories: 
-	- Blog
+categories: jekyll update
 toc : true
-
 ---
 
 In the previous week, I successfully completed modifying and testing the GUI, ensuring that it works as intended. My goal this week was to tackle the issue I was facing while subscribing to the webcam node.
