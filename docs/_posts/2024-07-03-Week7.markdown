@@ -12,7 +12,7 @@ To ensure there were no issues with the RADI container, I placed my webcam test 
 
 
 With this test, I confirmed that the container had no issues. In the follow line exercise, we had been using a separate `camera.py` script that subscribes to the webcam node and obtains the feed. I decided to omit it altogether and include the entire functionality within the `HAL.py` file. Below is the updated version of the `HAL.py` file:
-<img src = ".../assets/images/hal.jpeg" alt = "hal" width="600" height="400" frameborder="0"></img>
+<img src = ".../assets/images/hal.jpeg" alt = "hal" width="600" height="400" frameborder="0">
 
 When running the exercise, I obtained the webcam feed perfectly, as seen in the video below:
 
