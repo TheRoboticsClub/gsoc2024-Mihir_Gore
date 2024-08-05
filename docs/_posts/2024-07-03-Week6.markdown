@@ -5,11 +5,11 @@ date:   2024-07-17 11:00:13 +0530
 categories: jekyll update
 ---
 
-This week I tried to obtain a webcam feed into the exercise. Firstly, I was getting a specific error while running a sample code to obtain the webcam feed, wherein the console was displaying 
-"An instance of gazebo is not running." For the same, after meticulous discussion with the mentors, I reached upon the following remedy : 
-* Remove all the instances with the GUI file wherein we are possibly accessing gazebo. I found out that we were calculating th real time factor which is utlised by gazebo usually; which we aren't in our case. So I removed all the instances of real_time_factor or rtf from the GUI file. 
+This week, I focused on obtaining a webcam feed for the exercise. Initially, I encountered a specific error while running sample code to access the webcam feed, where the console displayed the message, "An instance of Gazebo is not running." To address this issue, I engaged in meticulous discussions with my mentors and arrived at the following solution:
 
-Another issue was mismatched topics of subscriber and publishers in launch files and HAL.py files, which I corrected them to the same v4l2_camera_node.
+* I removed all instances related to the GUI file where we were possibly accessing Gazebo. I discovered that we were calculating the real-time factor (RTF), which is typically utilized by Gazebo; however, we weren't using it in our case. Therefore, I eliminated all references to the real_time_factor or rtf from the GUI file.
 
-Another possible issue that was observed was that the physic_ rae visualisation type was not included in the launch of the gui_ server in the manager.py. This was resolved by adding an entry of the physic_ rae visualisation along with the gazebo_ rae visualisation. 
+Additionally, I encountered an issue with mismatched topics between subscribers and publishers in the launch files and HAL.py files. I corrected these discrepancies to ensure they all referenced the same v4l2_camera_node.
 
+Another potential issue I identified was that the physics rate visualization type was not included in the launch of the gui_server in manager.py. I resolved this by adding an entry for the physics rate visualization alongside the Gazebo rate visualization.
+<iframe src="https://drive.google.com/file/d/10PiyX_0gzCJBbA47XIV2sKNXCNj_L8RX/preview" width="640" height="480" allow="autoplay"></iframe>

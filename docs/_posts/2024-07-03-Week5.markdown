@@ -6,10 +6,10 @@ categories: jekyll update
 ---
 
 
-My primary objective this week was to create a minimal working model of the exercise that displays the webcam output. To achieve this, I first added an academy.py file to the code directory inside the python-template directory. This file contained simple code to obtain the image from the HAL file and display it using the GUI file.
+My primary objective this week was to create a minimal working model of the exercise that displays the webcam output. To achieve this, I first added an academy.py file to the code directory inside the python-template folder. This file contained simple code to obtain the image from the HAL file and display it using the GUI file.
 
-The next steps involved making necessary changes to the HAL and GUI files. In the HAL.py file, I removed redundant variables related to the line-following exercise and renamed the node to the webcam node whose image data is to be accessed. I then made adjustments to the GUI file to suit the needs of our exercise.
+The next steps involved making necessary modifications to the HAL and GUI files. In the HAL.py file, I removed redundant variables related to the line-following exercise and renamed the node to reflect its new purpose as the webcam node, which would provide the image data. I then made adjustments to the GUI file to align with the requirements of our exercise, ensuring a seamless integration between the webcam output and the graphical user interface.
 
-The next step was to test the exercise. When I ran it locally, the GUI websocket connected successfully. However, I consistently encountered an error stating 'Gazebo instance not running.' I rechecked to ensure the exercise was running on 'gazebo-rae' visualization instead of 'physical-rae' visualization, but it was not. I tried to determine whether the HAL or GUI files had any inherent Gazebo dependency, which they didn't.
+After these changes, I proceeded to test the exercise. When I ran it locally, the GUI websocket connected successfully. However, I consistently encountered an error message stating, "Gazebo instance not running." To troubleshoot this issue, I rechecked the configuration to ensure that the exercise was set to run on the 'gazebo-rae' visualization instead of 'physical-rae' visualization, but it was not. I also attempted to determine whether the HAL or GUI files had any inherent dependency on Gazebo, but found that they did not.
 
-Therefore, my next task for the coming week is to discuss this issue with mentors and community members to find a solution as soon as possible and proceed with the remaining aspects of the project.
+Therefore, my next task for the coming week is to discuss this issue with mentors and community members in order to find a solution as soon as possible. Addressing this challenge is crucial for proceeding with the remaining aspects of the project and ensuring that we can achieve our overall goals.

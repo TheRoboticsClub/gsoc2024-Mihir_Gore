@@ -7,6 +7,7 @@ categories: jekyll update
 
 
 My primary objective this week was to get the physical visualization and world up and running. In the `launcher_world` file, the physical dictionary was left blank, causing issues when running the physical world. I added the necessary contents, such as modules like `ros2api`,etc to resolve these errors.
+<iframe src="https://drive.google.com/file/d/1_QYQ_F1jp7Ixm8EKbNLbqcaBr0cBOER6/preview" width="640" height="480" allow="autoplay"></iframe>
 
 Next, I encountered errors from Pydantic regarding type annotations for fields like `running` and `threads` in the `launcher_visualisation` file. After researching the Pydantic library, I type-annotated those fields as `bool` and `List[Any]`, respectively. However, there were still inconsistencies with the data types of the internal and external ports mentioned in the file, which caused further errors. I standardized them as integer data types and made corresponding changes in the `launcher_visualisation` file.
 
