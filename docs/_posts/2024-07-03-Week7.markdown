@@ -11,7 +11,6 @@ In the previous week, I successfully completed modifying and testing the GUI, en
 To ensure there were no issues with the RADI container, I placed my webcam test scripts within the container. By accessing the container through the entrypoint `/bin/bash`, I checked their functionality using two separate terminals. Since bash doesn't support a GUI interface, I printed the pixel values of the input webcam feed as shown below:
 
 With this test, I confirmed that the container had no issues. In the follow line exercise, we had been using a separate `camera.py` script that subscribes to the webcam node and obtains the feed. I decided to omit it altogether and include the entire functionality within the `HAL.py` file. Below is the updated version of the `HAL.py` file:
-![](https://theroboticsclub.github.io/gsoc2024-Mihir_Gore/docs/assets/images/hal.jpeg)
 
 When running the exercise, I obtained the webcam feed perfectly, as seen in the video below:
 
