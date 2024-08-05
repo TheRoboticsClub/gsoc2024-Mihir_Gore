@@ -9,7 +9,8 @@ categories: jekyll update
 In the previous week, I successfully obtained the live webcam feed within the digit classifier exercise. My aim for this week was to create a working demo for the digit classifier exercise that will perform inference from the webcam feed on a pre-trained onnx model. File Structure is as follows:
 
 For this purpose I placed the pre-trained model within the 'python-template/ros2_humble' folder, which gets copied to '/workspace/code' within the docker container. I developed the code for running the inference and placed it within the Code Editor component within the exercise. The test code is as follows: 
-<img src="../assets/images/academycode.png" alt="AcademyCode" />
+<iframe width="560" height="315" src="https://drive.google.com/file/d/1uRcmK1WJ_-tCYEiVvJkCcLYcFAOHViOG/view?usp=drive_link" frameborder="0" ></iframe>
 
 I successfully obtained the live inference of digit classification on the webcam feed. It can be seen as below: 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/s-Pg08RcIUE?si=qSa838wcZezswhVw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
